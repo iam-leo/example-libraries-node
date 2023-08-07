@@ -1,7 +1,7 @@
 {
-  "name": "xacademy-nodejs",
+  "name": "prueba-front-back",
   "version": "1.0.0",
-  "description": "",
+  "description": "## 🗒 Proceso de desarrollo",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

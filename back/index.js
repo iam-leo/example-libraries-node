@@ -23,7 +23,7 @@ app.use('/user', routesUser);
 app.use(errorHandlerMiddleware);
 
 app.get('/', (req, res) => {
-    res.send('xAcademy - Ejercicio Integrador Node.js');
+    res.send('Test connect front -> back');
 });
 
 app.listen(3000, () => {
