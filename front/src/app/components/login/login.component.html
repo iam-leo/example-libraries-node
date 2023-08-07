@@ -1,12 +1,17 @@
 <div class="w-[400px] px-5 py-10 bg-white/50 rounded-md">
-    <form action="post" class="flex flex-col items-center justify-center w-full gap-y-8">
+    <form  
+        class="flex flex-col items-center justify-center w-full gap-y-8"
+        (ngSubmit)="onSubmit()"
+    >
         <div class="flex flex-col w-[300px] gap-y-3">
             <label for="user" class="text-lg font-bold text-indigo-900">Usuario</label>
             <input 
                 type="text"
                 id="user"
+                name="username"
                 class="p-1 text-lg text-center rounded-md"
                 placeholder="Ingresa tu nombre de usuario"
+                [(ngModel)]="username"
             >
         </div>
 
@@ -15,12 +20,14 @@
             <input 
                 type="password"
                 id="password"
+                name="password"
                 class="p-1 text-lg text-center rounded-md"
                 placeholder="Ingresa tu contraseña"
+                [(ngModel)]="password"
             >
         </div>
 
-        <button class="px-4 py-2 text-lg font-bold text-white uppercase bg-indigo-800 rounded-md hover:bg-indigo-900"> Iniciar Sesión </button>
+        <button class="px-4 py-2 text-lg font-bold text-white uppercase bg-indigo-800 rounded-md hover:bg-indigo-900" type="submit"> Iniciar Sesión </button>
     </form>
 
 </div>
